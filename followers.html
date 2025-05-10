@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكثر المتابعين تفاعلاً</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        
+        .rank-badge {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .rank-1 {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+        }
+        
+        .rank-2 {
+            background: linear-gradient(135deg, #C0C0C0 0%, #A9A9A9 100%);
+        }
+        
+        .rank-3 {
+            background: linear-gradient(135deg, #CD7F32 0%, #A0522D 100%);
+        }
+        
+        .rank-4plus {
+            background: linear-gradient(135deg, #6B7280 0%, #4B5563 100%);
+        }
+        
+        .interaction-icon {
+            color: #60a5fa;
+        }
+        
+        .follower-card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+        }
+        
+        .follower-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            background-color: #334155;
+        }
+        
+        .scroll-container {
+            scrollbar-width: thin;
+            scrollbar-color: #334155 #1e293b;
+        }
+        
+        .scroll-container::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        
+        .scroll-container::-webkit-scrollbar-track {
+            background: #1e293b;
+            border-radius: 10px;
+        }
+        
+        .scroll-container::-webkit-scrollbar-thumb {
+            background-color: #334155;
+            border-radius: 10px;
+        }
+        
+        .stats-card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+        }
+    </style>
+</head>
+<body class="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-white mb-2">أكثر المتابعين تفاعلاً</h1>
+        </div>
+        
+        <!-- Follower List -->
+        <div class="scroll-container max-h-[600px] overflow-y-auto pr-2">
+            <div class="space-y-4">
+                <!-- Follower 1 -->
+                <div class="follower-card rounded-xl p-5 flex items-center justify-between transition-all duration-200">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Profile" class="w-14 h-14 rounded-full object-cover border-2 border-blue-900">
+                        <div>
+                            <h3 class="font-bold text-white mr-3">@techguru</h3>
+                            <div class="flex items-center space-x-3 text-sm text-gray-400 mt-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rank-badge rank-1">#1</div>
+                </div>
+                
+                <!-- Follower 2 -->
+                <div class="follower-card rounded-xl p-5 flex items-center justify-between transition-all duration-200">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile" class="w-14 h-14 rounded-full object-cover border-2 border-blue-900">
+                        <div>
+                            <h3 class="font-bold text-white mr-3">@designmaster</h3>
+                            <div class="flex items-center space-x-3 text-sm text-gray-400 mt-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rank-badge rank-2">#2</div>
+                </div>
+                
+                <!-- Follower 3 -->
+                <div class="follower-card rounded-xl p-5 flex items-center justify-between transition-all duration-200">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Profile" class="w-14 h-14 rounded-full object-cover border-2 border-blue-900">
+                        <div>
+                            <h3 class="font-bold text-white mr-3">@marketingpro</h3>
+                            <div class="flex items-center space-x-3 text-sm text-gray-400 mt-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rank-badge rank-3">#3</div>
+                </div>
+                
+                <!-- Follower 4 -->
+                <div class="follower-card rounded-xl p-5 flex items-center justify-between transition-all duration-200">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Profile" class="w-14 h-14 rounded-full object-cover border-2 border-blue-900">
+                        <div>
+                            <h3 class="font-bold text-white mr-3">@startupfounder</h3>
+                            <div class="flex items-center space-x-3 text-sm text-gray-400 mt-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rank-badge rank-4plus">#4</div>
+                </div>
+                
+                <!-- Follower 5 -->
+                <div class="follower-card rounded-xl p-5 flex items-center justify-between transition-all duration-200">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://randomuser.me/api/portraits/women/90.jpg" alt="Profile" class="w-14 h-14 rounded-full object-cover border-2 border-blue-900">
+                        <div>
+                            <h3 class="font-bold text-white mr-3">@datascientist</h3>
+                            <div class="flex items-center space-x-3 text-sm text-gray-400 mt-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rank-badge rank-4plus">#5</div>
+                </div>
+                
+                <!-- Follower 6 -->
+                <div class="follower-card rounded-xl p-5 flex items-center justify-between transition-all duration-200">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Profile" class="w-14 h-14 rounded-full object-cover border-2 border-blue-900">
+                        <div>
+                            <h3 class="font-bold text-white mr-3">@webdev</h3>
+                            <div class="flex items-center space-x-3 text-sm text-gray-400 mt-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rank-badge rank-4plus">#6</div>
+                </div>
+                
+                <!-- Follower 7 -->
+                <div class="follower-card rounded-xl p-5 flex items-center justify-between transition-all duration-200">
+                    <div class="flex items-center space-x-4">
+                        <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Profile" class="w-14 h-14 rounded-full object-cover border-2 border-blue-900">
+                        <div>
+                            <h3 class="font-bold text-white mr-3">@uxdesigner</h3>
+                            <div class="flex items-center space-x-3 text-sm text-gray-400 mt-1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rank-badge rank-4plus">#7</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Set current date in Arabic
+        const now = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('current-date').textContent = now.toLocaleDateString('ar-EG', options);
+    </script>
+</body>
+</html>
